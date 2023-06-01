@@ -1,0 +1,199 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/img.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    
+
+
+
+}
+section{
+    width: 90%;
+    border: 2px solid purple;
+    margin: 100px auto;
+    display: flex;
+
+}
+section .cont-botones{
+    width: 50%;
+    min-height: 500px;
+    text-align: center;
+    padding:40px 20px ;
+border: 2px solid chartreuse;
+backdrop-filter: blur(5px);
+}
+section .cont-figura{
+    width: 50%;
+    min-height: 500px;
+    text-align: center;
+    padding:40px 20px ;
+border: 2px solid chartreuse;
+backdrop-filter: blur(5px);
+}
+h2{
+    font-size: 26px;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    margin: button 50px;
+}
+.cont-botones button{
+    padding: 12px 30px;
+    font-size: 20px;
+    background: transparent;
+    color: aliceblue;
+    border: 2px solid #ffff;
+    margin: 10px;
+    transition: .4s;
+
+}
+.cont-botones button:hover{
+    background: #fff;
+    color: purple;
+
+}
+#figura{
+    width: 220px;
+    height: 220px;
+    background: #fff;
+
+    border: 2px solid plum;
+    margin: 10px auto;
+    transition: 2.5s;
+
+}
+#figura.circulo{
+    border-radius:50%;
+    background: palegreen;
+}
+#figura.rectangulo{
+    width: 350px;
+}
+
+#figura.triangulo{
+    
+    width: 0;
+    height: 0;
+    border-top: 0;
+    border-right: 110px solid transparent;
+    border-left: 110px solid transparent;
+    border-bottom: 220px solid red; 
+    background: transparent
+    
+    }
+
+    #figura.girar{
+        transform: rotateY(360deg);
+    }
+
+    #figura.arriba{
+        transform: translateY(-51px);
+    }
+    
+.container2 {
+    width: 100%;
+    height: 100%;
+
+}
+#figura.abajo{
+    transform: translateY(51px);
+}
+      
+#figura.izquierda{
+    transform: translateX(-50px);
+}
+#figura.derecha{
+    transform:translateX(50px) ;
+}
+#figura.ocultar{
+    background: transparent;
+    border: transparent;
+} 
+
+#figura.degradado{
+    background: linear-gradient(to right, transparent, mistyrose, blue,green,red),
+    url("critters.png");
+}
+#figura.gif{
+background: url("../img/flower.gif");
+background-size: cover;
+}
+
+.panelIzq{
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -450px;
+    z-index: 999;
+    top: 0;
+    background: #fff;
+    padding:50px 40px ;
+    transition: .5s;
+
+}
+.panelIzq h3{
+    font-size: 30px;
+    color: #012937;
+}
+.panelIzq ul a{
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    max-width: 250px;
+    background:#000000 ;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.panelIzq.activo{
+left: 0;
+}
+.close{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: #999;
+    text-decoration: none;
+    font-size: 25px;
+
+
+}
+
+
+
+.panelS{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    background: url("../img/control.jpg");
+    
+}
+.panelS.activo1{
+    top: 0;
+}
+.closeB{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    color: #998;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.panelS h4{
+font-size: 25px;
+text-align: center;
+}
+
